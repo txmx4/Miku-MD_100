@@ -4784,7 +4784,7 @@ id: '-owner'
 let txt = `「 *${global.OwnerName}'s Broadcast* 」\n\n${text}`
 Miku.send5ButImg(yoi, txt, `${global.BotName}`, BotLogo, btn, Thumb)
 }
-replay('Broadcast Sent !')
+replay('Broadcast Gesendet !')
 }
 break    
 
@@ -4795,17 +4795,17 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by *Fantox*.
+Ich bin *Miku Nakano*,  entwickelt von *✨️MAGIC✨️*.
 
 🔰 My prefix is:  ${prefix}
 
-Here's the list of my Commands.
+Hier ist die Liste meiner Befehle.
 
 
  
  *━━━〈  🎆 Core 🎆  〉━━━*
 
-speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script, admin 
+speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, admin 
  
  *━━━〈  🎀 Owner 🎀  〉━━━*
 
@@ -4813,7 +4813,7 @@ self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast
 
  *━━━〈  ⭕ Group ⭕  〉━━━*
  
-promote, demote, revoke, add, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
+promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
  *━━━〈  ➰ Anti Link ➰  〉━━━*
  
@@ -4857,26 +4857,24 @@ reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomec
 
  *━━━〈  🪁 Essentials 🪁  〉━━━*
 
-qr, say, translate, fliptext, toletter, weather
+ say, translate, fliptext, toletter, weather
 
  *━━━〈  💥 NSFW 💥  〉━━━*
 
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
+🍁 Schreibe " *${prefix}nsfw* " Um zu NSFW aktivieren (Nur Admin!) 
 
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
+🍁 Dann schreib " *${prefix}nsfwmenu* " Um eine vollständige Liste der NSFW-Befehle zu erhalten.
 
 
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Angetrieben von: *✨️MAGIC✨️*
 
- 🔰 To use any of these commands type 
+ 🔰 Um einen dieser Befehle zu verwenden schreib 
  " *${prefix}<Command name>* ".
- 
- 🔰 To get Support Group link type " *${prefix}support* ".
 
- 🔰 Type " *${prefix}help* " to get full command list.`
+ 🔰 Schreibe " *${prefix}help* " Um die vollständige Befehlsliste zu erhalten.`
     
 
  let buttonshelpm = [
@@ -4903,7 +4901,7 @@ case '':
       mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
         
- const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
+ const needhelpmenu = `Brauchst du Hilfe ${pushname} Senpai? Gib *${prefix}help* Um meine vollständige Befehlsliste zu erhalten.`
      
          let butRun = [
                 {buttonId: `${prefix}help`, buttonText: {displayText: 'Help'}, type: 1}
@@ -4925,7 +4923,7 @@ case 'miku':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
-const txt = `Do you love Miku? Then we are the same.`
+const txt = `Liebst du Miku? Dann sind wir gleich.`
 const mikuarray= [
             "https://c.tenor.com/SOeIW-QVZvoAAAPo/scared-the-quintessential-quintuplets.mp4",
             "https://c.tenor.com/FDe7lTs0xvMAAAPo/miku-nakano-nakano-miku.mp4",
@@ -4968,21 +4966,12 @@ const mikuarray= [
 
 break
 
-case 'add':{     			
-    if (!m.isGroup) return replay(mess.grouponly)
- if (!isBotAdmins) return replay(mess.botadmin)
- let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
- if (users.length == 0) return replay(`Please write the number of the person you want to add to thhis group`)
-  await Miku.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`User Added Successfully!`)).catch((err) => replay(`Cannot add that user to this group!`))
- }
- break
-
 
  case "tts":  case "texttospeech":  case "say": case "speak":{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
-    if (!args[0]) return reply("Please give me a text so that i can speak it!")
+    if (!args[0]) return reply("Bitte geben Sie mir einen Text, damit ich ihn sprechen kann!")
       
       let texttosay = text
         ? text
@@ -4994,34 +4983,12 @@ case 'add':{
       Miku.sendMessage(m.chat,{audio: {url: texttospeechurl,},mimetype: "audio/mpeg",fileName: `MikuSpeechEngine.mp3`,},{quoted: m,});
     }
     break;
-
-
-    case 'qr': case 'qrcode':
-        if (isBan) return reply(mess.banned)	 			
-        if (isBanChat) return reply(mess.bangc)
-        if (!m.isGroup) return replay(mess.grouponly)
-    reply(`Running repl....Please wait until repl.it responds...`)						
-    var replqr =  await getBuffer(`https://miku-qr--fantox001.repl.co/`)
-                               var qrbutton = [
-            {buttonId: `${prefix}qr`, buttonText: {displayText: `Re-run Repl`}, type: 1}
-            ]
-          let bmffg = {
-           image: replqr,
-           caption:  `Scan the qr within 10-15 seconds...`,
-          footer: `${global.BotName}`,
-          buttons: qrbutton,
-          headerType: 4
-          }     
-                await Miku.sendMessage(m.chat, bmffg,{ quoted:m }).catch(err => {
-                        return('Error!')
-                    })
-    break
 		 case 'weather':
         if (isBan) return reply(mess.banned)
         if (!args[0]) return reply("Enter your location to search weather.")
          myweather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${args.join(" ")}&units=metric&appid=e409825a497a0c894d2dd975542234b0&language=tr`)
 
-        const weathertext = `           🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`
+        const weathertext = `           🌤 *Wetterbericht* 🌤  \n\n🔎 *Standort suchen:* ${myweather.data.name}\n*💮 Land:* ${myweather.data.sys.country}\n🌈 *Wetter:* ${myweather.data.weather[0].description}\n🌡️ *Temperatur:* ${myweather.data.main.temp}°C\n❄️ *Mindesttemperatur:* ${myweather.data.main.temp_min}°C\n📛 *Maximale Temperatur:* ${myweather.data.main.temp_max}°C\n💦 *Feuchtigkeit:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`
         Miku.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
 
         break
@@ -5033,7 +5000,7 @@ default:
     if(isCmd){
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
-        reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
+        reply (`Kein solcher Befehl programmiert *${pushname}* senpai! Gib *${prefix}help* Um meine vollständige Befehlsliste zu erhalten!`)
 
     }	 			
 

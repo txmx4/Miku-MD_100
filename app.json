@@ -1,9 +1,9 @@
 {
   "name": "Miku-MD",
-  "description": "A whatsApp bot based on Baileys linrary with Multi Device support",
-  "repository": "https://github.com/FantoX001/Miku-MD",
+  "description": "Ein WhatsApp-Bot basierend auf Baileys Linrary mit Unterstützung für mehrere Geräte",
+  "repository": "https://github.com/Fw437f/2084",
   "logo": "https://wallpapercave.com/wp/wp10524580.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "keywords": ["nodejs", "Ping", "P", "p", "Bot"],
   "buildpacks": [
     {
       "url": "heroku/nodejs"

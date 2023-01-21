@@ -15,7 +15,7 @@ global.packname = "Erstellt Für ✨️MAGIC✨️"
 global.author = "✨️MAGIC✨️"
 global.OwnerName = "✨️MAGIC✨️"
 global.BotSourceCode = "https://github.com/Fw437f/2084" // -- Please don't change -- //
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"  // -- Please don't change -- //
+global.SupportGroupLink = "https://chat.whatsapp.com/C4UvfSXyYZoDSV3gJDyCm3"  // -- Please don't change -- //
 global.sessionName = "session"  // -- Don't change otherwise bot will not work -- //
 
 

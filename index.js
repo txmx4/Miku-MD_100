@@ -19,7 +19,7 @@ const { color } = require('./lib/color')
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 async function startMiku() {
-console.log(color(figlet.textSync('Miku Bot MD', {
+console.log(color(figlet.textSync('MIKU V.1..0.0', {
 		font: 'Pagga',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -27,7 +27,7 @@ console.log(color(figlet.textSync('Miku Bot MD', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHello, I am ✨️MAGIC✨️, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
+console.log(color('\nHallo ich bin ✨️MAGIC✨️, Der Hauptentwickler dieses Bots.\n\nDanke für die Nutzung: Miku Bot','aqua'))
 console.log(color('\nYou can follow me on GitHub: Fw437f','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
@@ -46,7 +46,7 @@ store.bind(Miku.ev)
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await Miku.sendContact(callerId, global.owner)
-    Miku.sendMessage(callerId, { text: `Baka! You will be blocked automatically for calling me!`}, { quoted : pa7rick })
+    Miku.sendMessage(callerId, { text: `Baka! Sie werden automatisch gesperrt, wenn Sie mich anrufen!`}, { quoted : pa7rick })
     await sleep(8000)
     await Miku.updateBlockStatus(callerId, "block")
     }
@@ -96,21 +96,21 @@ Miku.ev.on('groups.update', async pea => {
         }
         let wm_fatih = { url : ppgc }
         if (pea[0].announce == true) {
-        //Miku.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `Miku Bot`, wm_fatih, [])
+        //Miku.send5ButImg(pea[0].id, `Grop wurde *geschlossen!* Nur *Admins* können Nachrichten senden!`, `Miku Bot`, wm_fatih, [])
 
-        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Closed!* Only *Admins* can send Messages!'})
+        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Gruppe wurde *geschlossen!* Nur *Admins* können Nachrichten senden!'})
         } else if(pea[0].announce == false) {
-       // Miku.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `Miku Bot`, wm_fatih, [])
-       Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Opened!* Now *Everyone* can send Messages!'})
+       // Miku.send5ButImg(pea[0].id, `Grop wurde *geöffnet!* Jetzt kann *jeder* Nachrichten senden!`, `Miku Bot`, wm_fatih, [])
+       Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Gruppe wurde *geöffnet!* Jetzt kann *jeder* Nachrichten senden!'})
         } else if (pea[0].restrict == true) {
-        //Miku.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `Miku Bot`, wm_fatih, [])
-        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !'})
+        //Miku.send5ButImg(pea[0].id, `Die Änderung von Gruppeninformationen wurde *eingeschränkt*, jetzt können nur *Admins* Gruppeninformationen bearbeiten !`, `Miku Bot`, wm_fatih, [])
+        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Die Änderung von Gruppeninformationen wurde *eingeschränkt*, jetzt können nur *Admins* Gruppeninformationen bearbeiten !'})
         } else if (pea[0].restrict == false) {
-        //Miku.send5ButImg(pea[0].id, `Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !`, `Miku Bot`, wm_fatih, [])
-        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !'})
+        //Miku.send5ButImg(pea[0].id, `Die Änderung der Gruppeninformationen wurde *unbeschränkt*, jetzt kann nur *jeder* Gruppeninformationen bearbeiten !`, `Miku Bot`, wm_fatih, [])
+        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Die Änderung der Gruppeninformationen wurde *unbeschränkt*, jetzt kann nur *jeder* Gruppeninformationen bearbeiten !'})
         } else {
-        //Miku.send5ButImg(pea[0].id, `Group Subject has been uhanged To:\n\n*${pea[0].subject}*`, `Miku Bot`, wm_fatih, [])
-        mikutextddfq =`Group Subject has been updated To:\n\n*${pea[0].subject}*`
+        //Miku.send5ButImg(pea[0].id, `Gruppenbetreff wurde aktualisiert Zu:\n\n*${pea[0].subject}*`, `Miku Bot`, wm_fatih, [])
+        mikutextddfq =`Gruppenbetreff wurde aktualisiert To:\n\n*${pea[0].subject}*`
         Miku.sendMessage(pea[0].id, { image: wm_fatih, caption: mikutextddfq})
       }
      })
@@ -150,11 +150,11 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 if (anu.action == 'add') {
                 let WAuserName = num
                 mikutext = `
-Hello @${WAuserName.split("@")[0]},
+Hallo @${WAuserName.split("@")[0]},
 
-I am *Miku Nakano*, Welcome to ${metadata.subject}.
+Ich bin *Miku Nakano*, Willkommen bei ${metadata.subject}.
 
-*Group Description:*
+*Gruppenbeschreibung:*
 ${metadata.desc}
 `
 
@@ -171,7 +171,7 @@ Miku.sendMessage(anu.id, buttonMessage)
                     mikutext = `
 Sayonara 👋, @${WAuserName.split("@")[0]},
 
-I hope you will come back soon, but we are not going to miss you though!
+Ich hoffe, Sie kommen bald wieder, aber wir werden Sie trotzdem nicht vermissen!
 `
 
     let buttonMessage = {
@@ -263,14 +263,14 @@ I hope you will come back soon, but we are not going to miss you though!
         const { connection, lastDisconnect } = update	    
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); process.exit(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("Connection closed, reconnecting...."); startMiku(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("Connection Lost from Server, reconnecting..."); startMiku(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First"); process.exit(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out, Please Delete Session and Scan Again.`); process.exit(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startMiku(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startMiku(); }
-            else { console.log(`Unknown DisconnectReason: ${reason}|${connection}`) }
+            if (reason === DisconnectReason.badSession) { console.log(`Fehlerhafte Sitzungsdatei, bitte Sitzung löschen und erneut scannen`); process.exit(); }
+            else if (reason === DisconnectReason.connectionClosed) { console.log("Verbindung geschlossen, neu verbinden...."); startMiku(); }
+            else if (reason === DisconnectReason.connectionLost) { console.log("Verbindung zum Server unterbrochen, Verbinded neu..."); startMiku(); }
+            else if (reason === DisconnectReason.connectionReplaced) { console.log("Verbindung ersetzt, weitere neue Sitzung geöffnet, bitte zuerst aktuelle Sitzung schließen"); process.exit(); }
+            else if (reason === DisconnectReason.loggedOut) { console.log(`Gerät abgemeldet, bitte Sitzung löschen und erneut scannen.`); process.exit(); }
+            else if (reason === DisconnectReason.restartRequired) { console.log("Neustart erforderlich, Neustart..."); startMiku(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("Zeitüberschreitung der Verbindung, Verbindung neu..."); startMiku(); }
+            else { console.log(`Unbekannter Trennungsgrund: ${reason}|${connection}`) }
         }
         //console.log('Connected...', update)
     })

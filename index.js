@@ -28,7 +28,7 @@ console.log(color(figlet.textSync('MIKU V.1..0.0', {
         }), 'yellow'))
 
 console.log(color('\nHallo ich bin ✨️MAGIC✨️, Der Hauptentwickler dieses Bots.\n\nDanke für die Nutzung: Miku Bot','aqua'))
-console.log(color('\nYou can follow me on GitHub: Fw437f','aqua'))
+console.log(color('\nDu kannst mir GitHub folgen: Fw437f','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({

@@ -7,14 +7,14 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['918101187835']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
-global.OwnerNumber = ['918101187835']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
-global.ownertag = ['918101187835']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.Owner = ['4915212908434']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.OwnerNumber = ['4915212908434']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.ownertag = ['4915212908434']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
 global.BotName = "Miku"
-global.packname = "Miku bot"
-global.author = "By: Fantox"
-global.OwnerName = "Fantox"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD" // -- Please don't change -- //
+global.packname = "Erstellt Für ✨️MAGIC✨️"
+global.author = "✨️MAGIC✨️"
+global.OwnerName = "✨️MAGIC✨️"
+global.BotSourceCode = "https://github.com/Fw437f/2084" // -- Please don't change -- //
 global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"  // -- Please don't change -- //
 global.sessionName = "session"  // -- Don't change otherwise bot will not work -- //
 
@@ -23,12 +23,12 @@ global.sessionName = "session"  // -- Don't change otherwise bot will not work -
 global.prefa = ['-'] // Prefix ---  change it to anythong you want except '@' //
 
 
-global.location = "West Bengal, India"
+global.location = "West Berlin"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
 global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
-global.websitex = "https://github.com/FantoX001"
-global.lolhuman = "KaysaS"
+global.websitex = "https://github.com/Fw437f/2084"
+global.lolhuman = "✨️MAGIC✨️"
 
 
 global.BotLogo = fs.readFileSync("./Assets/pic1.jpg")
@@ -58,19 +58,19 @@ global.ntilink = []
 
 
 global.mess = {
-    jobdone: 'Job done...',
-    useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
-    botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-    botowner: 'Only my *Owner* can use this command, Baka!',
-    grouponly: 'This command is only made for *Groups*, Baka!',
-    privateonly: 'This command is only made for *Private Chat*, Baka!',
-    botonly: 'Only the *Bot itself* can use this command!',
-    waiting: 'Chotto Matte...',
-    nolink: 'Please provide me *link*, Baka!',
-    error: 'An error occurd!',
-    banned: 'You are *Banned* fron using commands!',
-    bangc: 'This Group is *Banned* from using Commands!',
-    nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group!'
+    jobdone: 'Job erledigt...',
+    useradmin: 'Entschuldigung, nur *Gruppenadministratoren* können diesen Befehl verwenden *Baka*!',
+    botadmin: 'Tut mir leid, ich kann diesen Befehl nicht ausführen, ohne ein *Admin* dieser Gruppe zu sein.',
+    botowner: 'Nur mein *Eigentümer* kann diesen Befehl verwenden, Baka!',
+    grouponly: 'Dieser Befehl gilt nur für *Gruppen*, Baka!',
+    privateonly: 'Dieser Befehl ist nur für *Private Chat gedacht*, Baka!',
+    botonly: 'Nur der *Bot selbst* kann diesen Befehl verwenden!',
+    waiting: 'warten Sie eine Minute. . .',
+    nolink: 'Bitte gib mir *link*, Baka!',
+    error: 'Ein Fehler ist aufgetreten!',
+    banned: 'Sie sind für die Verwendung von Befehlen *gesperrt*!',
+    bangc: 'Diese Gruppe ist von der Verwendung von Befehlen *gesperrt*!',
+    nonsfw: 'Sei kein perverser Baka! Dies ist keine NSFW-aktivierte Gruppe!'
     
 }
 

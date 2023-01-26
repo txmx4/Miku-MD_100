@@ -1404,21 +1404,60 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('good night')) {
       reply (`Good night to you too *${pushname}* 😇. Sleep well and sweet dreams.`);
     }
-    if (smallinput.includes('Owner') || smallinput.includes('Owner')) {
-      reply (`My Owners are Kirito ( +491777062822 ) and Max ( +4917662927731 ) .`);
+  
+    if (smallinput=='Speed') {
+
+        reply (` Speed : ${latensie.toFixed(4)} miliseconds
+
+    Up Time : ${runtime(process.uptime())}
+
+    Bot Name : ${global.BotName}
+
+    Owner Name : ${global.OwnerName}
+
+    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
+
+    𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} `)
+
+    }
+	
+    if (smallinput=='System') {
+
+        reply (` Speed : ${latensie.toFixed(4)} miliseconds
+
+    Up Time : ${runtime(process.uptime())}
+
+    Bot Name : ${global.BotName}
+
+    Owner Name : ${global.OwnerName}
+
+    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
+
+    𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} )
+
     }
 
+    if (smallinput=='Systeminfo') {
+
+        reply (` Speed : ${latensie.toFixed(4)} miliseconds
+
+    Up Time : ${runtime(process.uptime())}
+
+    Bot Name : ${global.BotName}
+
+    Owner Name : ${global.OwnerName}
+
+    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
+
+    𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} `)
+
+    }
+    
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
     }
 
-    if (smallinput.includes('${prefix}Owner1')|| smallinput.includes('${prefix}Owner1') || smallinput.includes('thank')) {
-      reply (`Hey my Owner1 ist Max ( +4917662927731 ).`);
-    }    
-
-    if (smallinput.includes('${prefix}Owner2')|| smallinput.includes('${prefix}Owner2') || smallinput.includes('thank')) {
-      reply (`Hey my Owner2 ist Kirito ( +491777062822 ).`);
-    } 
+ 
 
 switch(command) {
 	

@@ -1404,13 +1404,21 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('good night')) {
       reply (`Good night to you too *${pushname}* 😇. Sleep well and sweet dreams.`);
     }
-    if (smallinput.includes('Owner') || smallinput.includes('ohayo')) {
+    if (smallinput.includes('Owner') || smallinput.includes('Owner')) {
       reply (`My Owners are Kirito ( +491777062822 ) and Max ( +4917662927731 ) .`);
     }
 
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
-    }      
+    }
+
+    if (smallinput.includes('Owner1')|| smallinput.includes('Owner1') || smallinput.includes('thank')) {
+      reply (`Hey my Owner1 ist Max ( +4917662927731 ).`);
+    }    
+
+    if (smallinput.includes('Owner1')|| smallinput.includes('Owner1') || smallinput.includes('thank')) {
+      reply (`Hey my Owner2 ist Max ( +491777062822 ).`);
+    } 
 
 switch(command) {
 	

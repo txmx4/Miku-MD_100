@@ -27,14 +27,14 @@ console.log(color(figlet.textSync('MIKU V.1..0.0', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHallo ich bin ✨️MAGIC✨️, Der Hauptentwickler dieses Bots.\n\nDanke für die Nutzung: Miku Bot','aqua'))
-console.log(color('\nDu kannst mir GitHub folgen: Fw437f','aqua'))
+console.log(color('\nHallo ich bin Max, Der Hauptentwickler dieses Bots.\n\nDanke für die Nutzung: Miku Bot','aqua'))
+console.log(color('\nDu kannst mir GitHub folgen: txmx3','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Miku by: Fantox','Safari','1.0.0'],
+        browser: ['Miku by: Max','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -169,7 +169,7 @@ Miku.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	let WAuserName = num
                     mikutext = `
-Sayonara 👋, @${WAuserName.split("@")[0]},
+Hey 👋, @${WAuserName.split("@")[0]},
 
 Ich hoffe, Sie kommen bald wieder, aber wir werden Sie trotzdem nicht vermissen!
 `

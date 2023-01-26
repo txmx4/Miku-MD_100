@@ -27,7 +27,7 @@ global.location = "West Berlin"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
 global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
-global.websitex = "https://github.com/Fw437f/2084"
+global.websitex = "https://github.com/txmx3"
 global.lolhuman = "M&A Inc."
 
 

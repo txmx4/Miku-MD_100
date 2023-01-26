@@ -1412,12 +1412,12 @@ return list[Math.floor(list.length * Math.random())]
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
     }
 
-    if (smallinput.includes('Owner1')|| smallinput.includes('Owner1') || smallinput.includes('thank')) {
+    if (smallinput.includes('${prefix}Owner1')|| smallinput.includes('${prefix}Owner1') || smallinput.includes('thank')) {
       reply (`Hey my Owner1 ist Max ( +4917662927731 ).`);
     }    
 
-    if (smallinput.includes('Owner1')|| smallinput.includes('Owner1') || smallinput.includes('thank')) {
-      reply (`Hey my Owner2 ist Max ( +491777062822 ).`);
+    if (smallinput.includes('${prefix}Owner2')|| smallinput.includes('${prefix}Owner2') || smallinput.includes('thank')) {
+      reply (`Hey my Owner2 ist Kirito ( +491777062822 ).`);
     } 
 
 switch(command) {

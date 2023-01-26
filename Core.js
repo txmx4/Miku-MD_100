@@ -1404,54 +1404,6 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('good night')) {
       reply (`Good night to you too *${pushname}* 😇. Sleep well and sweet dreams.`);
     }
-  
-    if (smallinput=='Speed') {
-
-        reply (` Speed : ${latensie.toFixed(4)} miliseconds
-
-    Up Time : ${runtime(process.uptime())}
-
-    Bot Name : ${global.BotName}
-
-    Owner Name : ${global.OwnerName}
-
-    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
-
-    𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} `)
-
-    }
-	
-    if (smallinput=='System') {
-
-        reply (` Speed : ${latensie.toFixed(4)} miliseconds
-
-    Up Time : ${runtime(process.uptime())}
-
-    Bot Name : ${global.BotName}
-
-    Owner Name : ${global.OwnerName}
-
-    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
-
-    𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} )
-
-    }
-
-    if (smallinput=='Systeminfo') {
-
-        reply (` Speed : ${latensie.toFixed(4)} miliseconds
-
-    Up Time : ${runtime(process.uptime())}
-
-    Bot Name : ${global.BotName}
-
-    Owner Name : ${global.OwnerName}
-
-    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
-
-    𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} `)
-
-    }
     
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);

@@ -825,7 +825,7 @@ if (antiVirtex) {
         await Miku.groupParticipantsUpdate(m.chat, [kice], 'remove')
         Miku.sendMessage(from, {text:`\`\`\`「  Antilink System  」\`\`\`\n\n@${kice.split("@")[0]} Baka has been removed for sending Instagram link in this group! No promotion is allowed!`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
         } else {
-        }
+        } 
         
         if (AntiLinkFacebook)
            if (budy.includes("https://facebook.com/")){
@@ -1403,6 +1403,9 @@ return list[Math.floor(list.length * Math.random())]
 
     if (smallinput.includes('good night')) {
       reply (`Good night to you too *${pushname}* 😇. Sleep well and sweet dreams.`);
+    }
+    if (smallinput.includes('Owner') || smallinput.includes('ohayo')) {
+      reply (`My Owners are Kirito ( +491777062822 ) and Max ( +4917662927731 ) .`);
     }
 
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
@@ -4795,7 +4798,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-Ich bin *Miku Nakano*,  entwickelt von *✨️MAGIC✨️*.
+Ich bin *Miku Nakano*,  entwickelt von *Max*.
 
 🔰 My prefix is:  ${prefix}
 
@@ -4869,7 +4872,7 @@ reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomec
 
 
  『  *${global.BotName}*  』
- Angetrieben von: *✨️MAGIC✨️*
+ Angetrieben von: *M&A Inc.*
 
  🔰 Um einen dieser Befehle zu verwenden schreib 
  " *${prefix}<Command name>* ".

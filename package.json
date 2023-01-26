@@ -1,6 +1,6 @@
 {
  "name": "miku-md",
- "description": "Whatsapp Bot Von ✨️MAGIC✨️",
+ "description": "Whatsapp Bot Von Max",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -18,7 +18,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Fantox (✨️MAGIC✨️)",
+ "author": "Fantox (Max)",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.4.0",

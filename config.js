@@ -12,8 +12,8 @@ global.OwnerNumber = ['491777062822','4917662927731']  // -- Add multiple number
 global.ownertag = ['491777062822','4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
 global.BotName = "Miku"
 global.packname = "Erstellt Für User"
-global.author = "Max"
-global.OwnerName = "Max"
+global.author = "M&A Inc."
+global.OwnerName = "M&A Inc."
 global.BotSourceCode = "https://github.com/Fw437f/2084" // -- Please don't change -- //
 global.SupportGroupLink = "https://chat.whatsapp.com/C4UvfSXyYZoDSV3gJDyCm3"  // -- Please don't change -- //
 global.sessionName = "session"  // -- Don't change otherwise bot will not work -- //
@@ -28,7 +28,7 @@ global.reactmoji = "❤️"
 global.themeemoji = "💖"
 global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
 global.websitex = "https://github.com/txmx3"
-global.lolhuman = "Max"
+global.lolhuman = "M&A Inc."
 
 
 global.BotLogo = fs.readFileSync("./Assets/pic1.jpg")

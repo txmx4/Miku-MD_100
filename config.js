@@ -7,9 +7,9 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
-global.OwnerNumber = ['4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
-global.ownertag = ['4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.Owner = ['491777062822','4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.OwnerNumber = ['491777062822','4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.ownertag = ['491777062822','4917662927731']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
 global.BotName = "Miku"
 global.packname = "Erstellt Für User"
 global.author = "M&A Inc."
@@ -20,7 +20,7 @@ global.sessionName = "session"  // -- Don't change otherwise bot will not work -
 
 
 
-global.prefa = ['#'] // Prefix ---  change it to anythong you want except '@' //
+global.prefa = ['~'] // Prefix ---  change it to anythong you want except '@' //
 
 
 global.location = "West Berlin"

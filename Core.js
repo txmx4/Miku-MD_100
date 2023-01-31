@@ -1393,6 +1393,13 @@ return list[Math.floor(list.length * Math.random())]
         reply (`*XD*`)
     }
 
+    if (smallinput=='-a') {
+        reply ('Pong!')
+    }
+
+    if (smallinput=='-a2') {
+        reply ('Pong!')
+
     if (smallinput=='op') {
         reply (`Hehe`)
     }
